@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Gestor_Deportes" Class="DBDeportesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=EMAPA-PC\SPIA;Initial Catalog=Gestor_Deportes;User ID=sa" SettingsObjectName="Entidades.Properties.Settings" SettingsPropertyName="Gestor_DeportesConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Ciudad" Member="Ciudad">
+    <Type Name="Ciudad">
+      <Column Name="id_estado" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id_pais" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="nombre_estado" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Pais_Ciudad" Member="Pais" ThisKey="id_pais" OtherKey="id_pais" Type="Pais" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.torneo" Member="torneo">
+    <Type Name="torneo">
+      <Column Name="id_torneo" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id_deporte" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="tipo_torneo" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="nombre_torneo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="nro_participantes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="pais_organizador" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Association Name="torneo_temporada" Member="temporada" ThisKey="id_torneo" OtherKey="id_torneo" Type="temporada" />
+      <Association Name="Deporte_torneo" Member="Deporte" ThisKey="id_deporte" OtherKey="id_deporte" Type="Deporte" IsForeignKey="true" />
+      <Association Name="tipo_competicion_torneo" Member="tipo_competicion" ThisKey="tipo_torneo" OtherKey="id_tipo_competicion" Type="tipo_competicion" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Deporte" Member="Deporte">
+    <Type Name="Deporte">
+      <Column Name="id_deporte" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nombre_deporte" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="tipo_deporte" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="nro_jugadores" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Deporte_torneo" Member="torneo" ThisKey="id_deporte" OtherKey="id_deporte" Type="torneo" />
+      <Association Name="Deporte_deportista" Member="deportista" ThisKey="id_deporte" OtherKey="id_deporte" Type="deportista" />
+      <Association Name="Deporte_Equipo" Member="Equipo" ThisKey="id_deporte" OtherKey="id_deporte" Type="Equipo" />
+      <Association Name="Tipo_Deporte_Deporte" Member="Tipo_Deporte1" ThisKey="tipo_deporte" OtherKey="id_tipo_deporte" Type="Tipo_Deporte" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.deportista" Member="deportista">
+    <Type Name="deportista">
+      <Column Name="id_deportista" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nombre_deportista" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="id_deporte" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="id_Pais" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="Equipo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="fecha_nacimiento_deportista" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="id_seleccion" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Association Name="Deporte_deportista" Member="Deporte" ThisKey="id_deporte" OtherKey="id_deporte" Type="Deporte" IsForeignKey="true" />
+      <Association Name="Pais_deportista" Member="Pais" ThisKey="id_Pais" OtherKey="id_pais" Type="Pais" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Equipo" Member="Equipo">
+    <Type Name="Equipo">
+      <Column Name="id_Equipo" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id_pais" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="id_deporte" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="nombre_equipo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Equipo_informacion_equipo" Member="informacion_equipo" ThisKey="id_Equipo" OtherKey="id_equipo" Type="informacion_equipo" />
+      <Association Name="Equipo_localia" Member="localia" ThisKey="id_Equipo" OtherKey="id_equipo" Type="localia" />
+      <Association Name="Equipo_palmares" Member="palmares" ThisKey="id_Equipo" OtherKey="id_equipo" Type="palmares" />
+      <Association Name="Equipo_staff" Member="staff" ThisKey="id_Equipo" OtherKey="id_equipo" Type="staff" />
+      <Association Name="Deporte_Equipo" Member="Deporte" ThisKey="id_deporte" OtherKey="id_deporte" Type="Deporte" IsForeignKey="true" />
+      <Association Name="Pais_Equipo" Member="Pais" ThisKey="id_pais" OtherKey="id_pais" Type="Pais" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fecha_torneo" Member="fecha_torneo">
+    <Type Name="fecha_torneo">
+      <Column Name="id_fecha_torneo" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id_temporada" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="nombre_fecha_torneo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="descripcion_fecha_torneo" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Association Name="fecha_torneo_partido" Member="partido" ThisKey="id_fecha_torneo" OtherKey="id_fecha_torneo" Type="partido" />
+      <Association Name="temporada_fecha_torneo" Member="temporada" ThisKey="id_temporada" OtherKey="id_temporada" Type="temporada" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.informacion_equipo" Member="informacion_equipo">
+    <Type Name="informacion_equipo">
+      <Column Name="id_informacion_equipo" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id_equipo" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="nickname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="presidente_equipo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="fundacion_equipo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Equipo_informacion_equipo" Member="Equipo" ThisKey="id_equipo" OtherKey="id_Equipo" Type="Equipo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.localia" Member="localia">
+    <Type Name="localia">
+      <Column Name="id_localia" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nombre_localia" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="direccion_localia" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="capacidad_localia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="fundacion_localia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_equipo" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Association Name="Equipo_localia" Member="Equipo" ThisKey="id_equipo" OtherKey="id_Equipo" Type="Equipo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Pais" Member="Pais">
+    <Type Name="Pais">
+      <Column Name="id_pais" Type="System.String" DbType="VarChar(3) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nombre_pais" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="continente" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Association Name="Pais_Ciudad" Member="Ciudad" ThisKey="id_pais" OtherKey="id_pais" Type="Ciudad" />
+      <Association Name="Pais_deportista" Member="deportista" ThisKey="id_pais" OtherKey="id_Pais" Type="deportista" />
+      <Association Name="Pais_Equipo" Member="Equipo" ThisKey="id_pais" OtherKey="id_pais" Type="Equipo" />
+      <Association Name="Pais_staff" Member="staff" ThisKey="id_pais" OtherKey="nacionalidad_staff" Type="staff" />
+    </Type>
+  </Table>
+  <Table Name="dbo.palmares" Member="palmares">
+    <Type Name="palmares">
+      <Column Name="id_ganador" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id_palmares" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="id_equipo" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="gestion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Equipo_palmares" Member="Equipo" ThisKey="id_equipo" OtherKey="id_Equipo" Type="Equipo" IsForeignKey="true" />
+      <Association Name="titulos_palmares" Member="titulos" ThisKey="id_palmares" OtherKey="id_titulo" Type="titulos" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.partido" Member="partido">
+    <Type Name="partido">
+      <Column Name="id_partido" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id_fecha_torneo" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="nombre_partido" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ocurrencias_partido" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="ganador_partido" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="fecha_torneo_partido" Member="fecha_torneo" ThisKey="id_fecha_torneo" OtherKey="id_fecha_torneo" Type="fecha_torneo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.staff" Member="staff">
+    <Type Name="staff">
+      <Column Name="id_staff" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id_equipo" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="nombre_staff" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="fecha_nacimiento_staff" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="tipo_staff" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="nacionalidad_staff" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Association Name="Equipo_staff" Member="Equipo" ThisKey="id_equipo" OtherKey="id_Equipo" Type="Equipo" IsForeignKey="true" />
+      <Association Name="Pais_staff" Member="Pais" ThisKey="nacionalidad_staff" OtherKey="id_pais" Type="Pais" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.temporada" Member="temporada">
+    <Type Name="temporada">
+      <Column Name="id_temporada" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id_torneo" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="anio_temporada" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="descripcion_temporada" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="temporada_fecha_torneo" Member="fecha_torneo" ThisKey="id_temporada" OtherKey="id_temporada" Type="fecha_torneo" />
+      <Association Name="torneo_temporada" Member="torneo" ThisKey="id_torneo" OtherKey="id_torneo" Type="torneo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tipo_competicion" Member="tipo_competicion">
+    <Type Name="tipo_competicion">
+      <Column Name="id_tipo_competicion" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="descripcion_tipo_competicion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="nivel_organizacional" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="tipo_competicion_torneo" Member="torneo" ThisKey="id_tipo_competicion" OtherKey="tipo_torneo" Type="torneo" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tipo_Deporte" Member="Tipo_Deporte">
+    <Type Name="Tipo_Deporte">
+      <Column Name="id_tipo_deporte" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Tipo_Deporte_Deporte" Member="Deporte" ThisKey="id_tipo_deporte" OtherKey="tipo_deporte" Type="Deporte" />
+    </Type>
+  </Table>
+  <Table Name="dbo.titulos" Member="titulos">
+    <Type Name="titulos">
+      <Column Name="id_titulo" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nombre_titulo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="descripcion_titulo" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Association Name="titulos_palmares" Member="palmares" ThisKey="id_titulo" OtherKey="id_palmares" Type="palmares" />
+    </Type>
+  </Table>
+</Database>

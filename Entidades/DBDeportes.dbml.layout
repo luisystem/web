@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 15, 16.625" name="DBDeportes">
+  <DataContextMoniker Name="/DBDeportesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="280f145f-892e-420a-8ab6-f122c86c2897" absoluteBounds="3.5, 9, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/DBDeportesDataContext/Ciudad" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fc969d58-9827-4731-a0e4-cba7f2e3023b" absoluteBounds="3.515, 9.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="94e96ee7-0f89-4554-a695-2e5332e8621b" absoluteBounds="4.5, 0.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/DBDeportesDataContext/torneo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0265cd34-bb60-442c-a5d3-7c647670266e" absoluteBounds="4.515, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e168cb50-5ea6-4be2-8976-aeb7695a0dca" absoluteBounds="0.75, 6, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DBDeportesDataContext/Deporte" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e22b8289-0b08-444b-a195-eec13a26676f" absoluteBounds="0.765, 6.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b1b9708d-ef1c-42e4-97c9-acbce6cda63d" absoluteBounds="3.5, 11.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DBDeportesDataContext/deportista" />
+      <nestedChildShapes>
+        <elementListCompartment Id="86448901-df1c-42b0-91ff-c28af021c082" absoluteBounds="3.515, 12.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1d06a372-6c18-4300-b027-1ce17eaf3f07" absoluteBounds="3.5, 6, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DBDeportesDataContext/Equipo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5fab998b-b75a-4408-bfa2-54b4c6a8db8e" absoluteBounds="3.515, 6.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="acf65ef7-6216-46d2-a3bf-dbf898c7f125" absoluteBounds="10, 4.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DBDeportesDataContext/fecha_torneo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="54935778-4136-4065-a43d-3833379f80de" absoluteBounds="10.015, 4.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="446de5ac-11bd-4f8c-b41b-d62126d43668" absoluteBounds="6.25, 6.875, 2, 1.7708968098958318">
+      <DataClassMoniker Name="/DBDeportesDataContext/informacion_equipo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="570891ae-72d8-4b75-a34f-68ad6beef771" absoluteBounds="6.265, 7.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="18a4435a-110e-40c9-b1ca-50377ce9d122" absoluteBounds="6.25, 9.375, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/DBDeportesDataContext/localia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d93c7077-0c83-42b7-968c-4a4b7634bfcb" absoluteBounds="6.265, 9.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6a9fc3c8-f929-4d6c-9518-c25fee02ee9f" absoluteBounds="0.75, 9, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/DBDeportesDataContext/Pais" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ca0098e4-4306-46e7-84c7-ad0131c2135d" absoluteBounds="0.765, 9.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="66ee63c0-6d0b-4401-be72-085418e3d2db" absoluteBounds="6.25, 4, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DBDeportesDataContext/palmares" />
+      <nestedChildShapes>
+        <elementListCompartment Id="225677c8-91a5-46f0-a9db-c2ab6b3ef806" absoluteBounds="6.265, 4.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a04b5af8-1a2d-4f0d-83d8-9478a3533b76" absoluteBounds="12.75, 4.25, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/DBDeportesDataContext/partido" />
+      <nestedChildShapes>
+        <elementListCompartment Id="08a4049f-5f4c-45c0-9cf8-f8a71787a36a" absoluteBounds="12.765, 4.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="922c2188-6245-483c-8936-0f598a9e5895" absoluteBounds="9.25, 7.25, 2, 1.9631982421874996">
+      <DataClassMoniker Name="/DBDeportesDataContext/staff" />
+      <nestedChildShapes>
+        <elementListCompartment Id="671a02ff-08da-4c53-8bde-24f1fbd79147" absoluteBounds="9.265, 7.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3df74441-6e47-4a6b-be1b-e62693de737f" absoluteBounds="7.25, 1.125, 2, 1.5785953776041668">
+      <DataClassMoniker Name="/DBDeportesDataContext/temporada" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ab7b1f96-eaff-4718-a404-e73bd4d9896e" absoluteBounds="7.265, 1.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="aeea2d1f-c4f3-4be3-ae5a-769d8cd32e54" absoluteBounds="1.75, 0.875, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DBDeportesDataContext/tipo_competicion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0be2ba04-598a-4cc7-a6ec-563e2c224314" absoluteBounds="1.7650000000000001, 1.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="763ac2e8-1b9e-42fc-9030-dcdf67bb20f3" absoluteBounds="1.5, 3.125, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/DBDeportesDataContext/Tipo_Deporte" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d8280f02-f028-4a2d-a9ac-745fe58d5e45" absoluteBounds="1.5150000000000001, 3.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="98045d1c-5874-45c9-a5b9-61365c1b5e3d" absoluteBounds="3.5, 15, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/DBDeportesDataContext/titulos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="afcd91f5-828f-47a8-9537-03141ff1a725" absoluteBounds="3.515, 15.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.09375 : 6); (1.09375 : 2.51849609375); (4.5 : 2.51849609375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBDeportesDataContext/Deporte/Deporte_torneo" />
+      <nodes>
+        <classShapeMoniker Id="e168cb50-5ea6-4be2-8976-aeb7695a0dca" />
+        <classShapeMoniker Id="94e96ee7-0f89-4554-a695-2e5332e8621b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.57859537760417); (3.125 : 7.95359537760417); (3.125 : 12.7027498372396); (3.5 : 12.7027498372396)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBDeportesDataContext/Deporte/Deporte_deportista" />
+      <nodes>
+        <classShapeMoniker Id="e168cb50-5ea6-4be2-8976-aeb7695a0dca" />
+        <classShapeMoniker Id="b1b9708d-ef1c-42e4-97c9-acbce6cda63d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.75804518880208); (3.5 : 6.75804518880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBDeportesDataContext/Deporte/Deporte_Equipo" />
+      <nodes>
+        <classShapeMoniker Id="e168cb50-5ea6-4be2-8976-aeb7695a0dca" />
+        <classShapeMoniker Id="1d06a372-6c18-4300-b027-1ce17eaf3f07" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 7.22679768880208); (5.85416666666667 : 7.22679768880208 : JumpStart); (6.02083333333333 : 7.22679768880208 : JumpEnd); (6.25 : 7.22679768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBDeportesDataContext/Equipo/Equipo_informacion_equipo" />
+      <nodes>
+        <classShapeMoniker Id="1d06a372-6c18-4300-b027-1ce17eaf3f07" />
+        <classShapeMoniker Id="446de5ac-11bd-4f8c-b41b-d62126d43668" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 7.57859537760417); (5.875 : 7.95359537760417); (5.875 : 10.3565991210937); (6.25 : 10.3565991210937)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBDeportesDataContext/Equipo/Equipo_localia" />
+      <nodes>
+        <classShapeMoniker Id="1d06a372-6c18-4300-b027-1ce17eaf3f07" />
+        <classShapeMoniker Id="18a4435a-110e-40c9-b1ca-50377ce9d122" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 9.69314697265625); (3.04166666666667 : 9.69314697265625 : JumpStart); (3.20833333333333 : 9.69314697265625 : JumpEnd); (3.5 : 9.69314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBDeportesDataContext/Pais/Pais_Ciudad" />
+      <nodes>
+        <classShapeMoniker Id="6a9fc3c8-f929-4d6c-9518-c25fee02ee9f" />
+        <classShapeMoniker Id="280f145f-892e-420a-8ab6-f122c86c2897" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 10.3862939453125); (1.75 : 12.1326224186198); (3.04166666666667 : 12.1326224186198 : JumpStart); (3.20833333333333 : 12.1326224186198 : JumpEnd); (3.5 : 12.1326224186198)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBDeportesDataContext/Pais/Pais_deportista" />
+      <nodes>
+        <classShapeMoniker Id="6a9fc3c8-f929-4d6c-9518-c25fee02ee9f" />
+        <classShapeMoniker Id="b1b9708d-ef1c-42e4-97c9-acbce6cda63d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 9.0618490375601); (3.06607443490112 : 8.74577460265898 : JumpStart); (3.18392556509888 : 8.62792347246122 : JumpEnd); (3.3125 : 8.4993490375601); (3.3125 : 7.19957228320312); (3.5 : 7.19957228320312)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBDeportesDataContext/Pais/Pais_Equipo" />
+      <nodes>
+        <classShapeMoniker Id="6a9fc3c8-f929-4d6c-9518-c25fee02ee9f" />
+        <classShapeMoniker Id="1d06a372-6c18-4300-b027-1ce17eaf3f07" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.53125 : 6); (4.53125 : 4.78929768880208); (6.25 : 4.78929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBDeportesDataContext/Equipo/Equipo_palmares" />
+      <nodes>
+        <classShapeMoniker Id="1d06a372-6c18-4300-b027-1ce17eaf3f07" />
+        <classShapeMoniker Id="66ee63c0-6d0b-4401-be72-085418e3d2db" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12 : 5.16429768880208); (12.75 : 5.16429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBDeportesDataContext/fecha_torneo/fecha_torneo_partido" />
+      <nodes>
+        <classShapeMoniker Id="acf65ef7-6216-46d2-a3bf-dbf898c7f125" />
+        <classShapeMoniker Id="a04b5af8-1a2d-4f0d-83d8-9478a3533b76" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.40625); (5.85416666666667 : 6.40625 : JumpStart); (6.02083333333333 : 6.40625 : JumpEnd); (10.25 : 6.40625); (10.25 : 7.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBDeportesDataContext/Equipo/Equipo_staff" />
+      <nodes>
+        <classShapeMoniker Id="1d06a372-6c18-4300-b027-1ce17eaf3f07" />
+        <classShapeMoniker Id="922c2188-6245-483c-8936-0f598a9e5895" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 9); (1.75 : 8.23159912109375); (3.04166666666667 : 8.23159912109375 : JumpStart); (3.20833333333333 : 8.23159912109375 : JumpEnd); (3.22916666666667 : 8.23159912109375 : JumpStart); (3.39583333333333 : 8.23159912109375 : JumpEnd); (5.79166666666667 : 8.23159912109375 : JumpStart); (5.95833333333333 : 8.23159912109375 : JumpEnd); (6 : 8.23159912109375); (6 : 8.89589680989583); (8.875 : 8.89589680989583); (8.875 : 8.23159912109375); (9.25 : 8.23159912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBDeportesDataContext/Pais/Pais_staff" />
+      <nodes>
+        <classShapeMoniker Id="6a9fc3c8-f929-4d6c-9518-c25fee02ee9f" />
+        <classShapeMoniker Id="922c2188-6245-483c-8936-0f598a9e5895" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.78125 : 2.70359537760417); (8.78125 : 5.79734537760417); (10 : 5.79734537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBDeportesDataContext/temporada/temporada_fecha_torneo" />
+      <nodes>
+        <classShapeMoniker Id="3df74441-6e47-4a6b-be1b-e62693de737f" />
+        <classShapeMoniker Id="acf65ef7-6216-46d2-a3bf-dbf898c7f125" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.5 : 1.91429768880208); (7.25 : 1.91429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBDeportesDataContext/torneo/torneo_temporada" />
+      <nodes>
+        <classShapeMoniker Id="94e96ee7-0f89-4554-a695-2e5332e8621b" />
+        <classShapeMoniker Id="3df74441-6e47-4a6b-be1b-e62693de737f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.75 : 1.56814697265625); (4.5 : 1.56814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBDeportesDataContext/tipo_competicion/tipo_competicion_torneo" />
+      <nodes>
+        <classShapeMoniker Id="aeea2d1f-c4f3-4be3-ae5a-769d8cd32e54" />
+        <classShapeMoniker Id="94e96ee7-0f89-4554-a695-2e5332e8621b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.125 : 4.31899251302083); (2.125 : 6)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBDeportesDataContext/Tipo_Deporte/Tipo_Deporte_Deporte" />
+      <nodes>
+        <classShapeMoniker Id="763ac2e8-1b9e-42fc-9030-dcdf67bb20f3" />
+        <classShapeMoniker Id="e168cb50-5ea6-4be2-8976-aeb7695a0dca" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 15.0618490375601); (5.9375 : 14.6243490375601); (5.9375 : 5.21519853320313); (6.25 : 5.21519853320313)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBDeportesDataContext/titulos/titulos_palmares" />
+      <nodes>
+        <classShapeMoniker Id="98045d1c-5874-45c9-a5b9-61365c1b5e3d" />
+        <classShapeMoniker Id="66ee63c0-6d0b-4401-be72-085418e3d2db" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
