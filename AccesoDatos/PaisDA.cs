@@ -18,6 +18,25 @@ namespace AccesoDatos
                                      select pais;
             return ConsultaALista<Pais>(query);
         }
+        public void Adicionar(Pais item)
+        {
+            DBDeportesDataContext dc = GetDC();
+            dc.Pais.InsertOnSubmit(item);
+            dc.SubmitChanges();
+        }
+        public void Eliminar(Pais item)
+        {
+            DBDeportesDataContext dc = GetDC();
+            dc.Pais.Attach(item);
+            dc.Pais.DeleteOnSubmit(item);
+            dc.SubmitChanges();
+        }
+        public void Actualizar(Pais nuevoItem, Pais originalItem)
+        {
+            DBDeportesDataContext dc = GetDC();
+            dc.Pais.Attach(nuevoItem, originalItem);
+            dc.SubmitChanges();
+        }
         #endregion
     }
 }
