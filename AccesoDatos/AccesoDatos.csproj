@@ -43,6 +43,7 @@
     <Compile Include="BaseDA.cs" />
     <Compile Include="DeportistaDA.cs" />
     <Compile Include="IDataAccess.cs" />
+    <Compile Include="PaisDA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
